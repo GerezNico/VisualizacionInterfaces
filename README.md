@@ -39,6 +39,3 @@ Nota para colaboradores:
 Política sobre node_modules:
 - `node_modules/` está en `.gitignore` y NO se sube al repositorio.
 - Si clonas el proyecto y quieres trabajar con SCSS, ejecuta `npm install`.
-
-Contacto:
-- Propietario del repo: @GerezNico
