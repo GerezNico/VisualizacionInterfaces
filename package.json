@@ -1,0 +1,15 @@
+{
+  "name": "interfaces",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "sass": "sass scss/custom.scss css/custom.css",
+    "sass:watch": "sass --watch scss/custom.scss css/custom.css"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.8"
+  },
+  "devDependencies": {
+    "sass": "^1.93.3"
+  }
+}
