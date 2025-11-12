@@ -11862,12 +11862,23 @@ textarea.form-control-lg {
 }
 .navbar {
   background-color: #1B4D3E;
+  /* Alineación de la marca (logo + título) */
 }
 .navbar .navbar-brand {
   color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 .navbar .navbar-brand:hover, .navbar .navbar-brand:focus {
   color: #e9ecef;
+}
+.navbar .navbar-brand .brand-title {
+  margin: 0;
+  font-size: 1.25rem; /* ajustable */
+  font-weight: 700;
+  color: inherit;
+  line-height: 1;
 }
 .navbar .nav-link {
   color: rgba(255, 255, 255, 0.85);
@@ -11884,7 +11895,42 @@ textarea.form-control-lg {
 .navbar .navbar-toggler .navbar-toggler-icon {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
+.navbar {
+  /* Espaciado entre items del navbar */
+}
+.navbar .navbar-nav {
+  /* gap funciona con flex; Bootstrap usa flex en .navbar-nav en pantallas expandidas */
+  gap: 0.6rem;
+}
+.navbar .nav-link {
+  /* ajustar padding horizontal para mejorar clickable area sin unir demasiado los items */
+  padding-left: 0.6rem;
+  padding-right: 0.6rem;
+}
+.navbar {
+  /* Centrar los items del navbar respecto a la pantalla en pantallas grandes
+     (se aplica cuando el navbar está expandido: navbar-expand-lg -> >= 992px) */
+  position: relative; /* para que el absolute de .navbar-nav se calcule respecto a este contenedor */
+}
 
+@media (min-width: 992px) {
+  .navbar .navbar-nav {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    /* mantener layout en línea */
+    display: flex;
+    flex-direction: row;
+  }
+  .navbar {
+    /* evitar que el collapse cambie la posición del contenedor padre */
+  }
+  .navbar .navbar-collapse {
+    position: static;
+  }
+}
 .carousel {
   width: 100%;
   height: 500px;
@@ -11933,5 +11979,167 @@ textarea.form-control-lg {
   color: rgb(255, 255, 255);
   border-radius: 5px;
 }
+
+/* Estilos de la maqueta del main */
+.card .card-img-top {
+  height: 180px;
+  object-fit: cover;
+}
+
+.bg-success {
+  /* Mantener el verde inglés para la CTA */
+  background-color: #1B4D3E !important;
+}
+
+.search-card .form-control-lg {
+  border-radius: 0.5rem;
+}
+
+/* Ajustes responsive y espaciado */
+@media (max-width: 576px) {
+  .card .card-img-top {
+    height: 140px;
+  }
+}
+/* Partner logos (moved from inline styles in HTML) */
+.partner-logo {
+  height: 48px;
+  width: auto;
+  display: block;
+}
+
+/* -----------------------------
+    Reglas responsive adicionales
+    Ajustes para que el proyecto se vea bien en móviles/tablet/desktop
+     ----------------------------- */
+/* Carousel: alturas y captions según breakpoint */
+.carousel {
+  height: 500px;
+}
+
+@media (max-width: 992px) {
+  .carousel {
+    height: 380px;
+  }
+  .carousel-caption {
+    font-size: 0.95rem;
+    bottom: 1.5rem;
+  }
+  .card .card-img-top {
+    height: 160px;
+  }
+}
+@media (max-width: 576px) {
+  .carousel {
+    height: 260px;
+  }
+  /* En móviles ocultamos caption para maximizar visibilidad de la imagen */
+  .carousel-caption {
+    display: none;
+  }
+  /* Centrar y mostrar la cara en imgs del carousel si se usa object-position */
+  .carousel-item img {
+    object-fit: cover;
+    object-position: center;
+  }
+  .card .card-img-top {
+    height: 140px;
+  }
+  /* Partner logos más pequeños en pantallas chicas */
+  .partner-logo {
+    height: 36px;
+  }
+  /* Navbar: reducir logo en pantallas pequeñas */
+  .imgrubik {
+    max-width: 32px;
+  }
+}
+/* Tipografía y espaciado responsivos */
+h2.h4, .h4.h2 {
+  font-size: clamp(1.05rem, 1.8vw, 1.5rem);
+}
+
+/* Asegurar que las imágenes dentro de cards sean fluidas */
+.card-img-top {
+  width: 100%;
+  height: auto; /* fallback: en caso que object-fit no esté soportado */
+}
+
+/* Footer styles */
+.bg-dark a.text-white-50:hover {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.btn-outline-light {
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+/* -----------------------------
+     Tema: Verde como color principal
+     Sobre-escrituras para aplicar el verde del proyecto en botones, links y hover states
+     ----------------------------- */
+:root {
+  --brand-green: #1B4D3E;
+}
+
+/* Links generales */
+a:not(.btn) {
+  color: #1B4D3E;
+  transition: color 0.12s ease-in-out;
+}
+
+a:not(.btn):hover,
+a:not(.btn):focus {
+  color: rgb(16.4076923077, 46.7923076923, 37.6769230769);
+  text-decoration: underline;
+}
+
+/* Links estilo Bootstrap */
+.link-primary {
+  color: #1B4D3E !important;
+}
+
+.link-primary:hover {
+  color: rgb(16.4076923077, 46.7923076923, 37.6769230769) !important;
+}
+
+/* Botones verdes */
+.btn-success {
+  background-color: #1B4D3E !important;
+  border-color: #1B4D3E !important;
+  color: #ffffff !important;
+}
+
+.btn-success:hover, .btn-success:focus {
+  background-color: rgb(16.4076923077, 46.7923076923, 37.6769230769) !important;
+  border-color: rgb(16.4076923077, 46.7923076923, 37.6769230769) !important;
+  color: #ffffff !important;
+}
+
+.btn-outline-success {
+  color: #1B4D3E !important;
+  border-color: #1B4D3E !important;
+}
+
+.btn-outline-success:hover, .btn-outline-success:focus {
+  background-color: #1B4D3E !important;
+  color: #ffffff !important;
+  border-color: #1B4D3E !important;
+}
+
+/* Navbar: cuando el fondo es oscuro, mantener blanco pero usar verde en hover */
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+  color: #1B4D3E !important;
+}
+
+/* Small transition on buttons/links for a smoother feel */
+.btn, a {
+  transition: background-color 0.12s ease, color 0.12s ease, border-color 0.12s ease;
+}
+
+/* Compatibilidad: si prefieres mantener altura fija + crop, la regla .card .card-img-top
+     definida más arriba (object-fit: cover) seguirá aplicando en pantallas más grandes. */
 
 /*# sourceMappingURL=custom.css.map */
