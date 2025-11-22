@@ -2,10 +2,10 @@
 
 Proyecto de interfaces con Bootstrap y SCSS.
 
-Propósito: incluir el CSS compilado para que colaboradores puedan abrir la web localmente sin pasos extra.
+Propósito: mostrar tours gratuitos en la Provincia de Buenos Aires. El CSS compilado está incluido para que colaboradores puedan abrir la web localmente sin pasos extra.
 
 Archivos importantes:
-- `index.html` — página principal
+- `index.html` — página principal (listado de tours)
 - `scss/custom.scss` — fuente SCSS editable
 - `css/custom.css` — CSS compilado (incluido en el repo para conveniencia)
 - `img/` — imágenes del proyecto

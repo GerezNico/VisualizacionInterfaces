@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour Histórico de La Plata — Rubik Tours Gratuitos</title>
+
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <!--Link css-->
+    <link rel="stylesheet" href="../css/custom.css">
+
+    <style>
+        .tour-hero {
+            height: 400px;
+            object-fit: cover;
+            object-position: center;
+            width: 100%;
+        }
+        .tour-hero-container {
+            position: relative;
+            height: 400px;
+            margin-bottom: 2rem;
+            display: flex;
+            align-items: flex-end;
+            background-color: #6c757d;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url('../img/a2d135fd-c985-4f49-b912-07ffc125f6d2.png');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .tour-hero-content {
+            width: 100%;
+            color: white;
+            padding: 2rem;
+            z-index: 10;
+        }
+        .instructor-card {
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .instructor-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        .instructor-img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin: 0 auto;
+        }
+        .itinerary-item {
+            border-left: 4px solid #1B4D3E;
+            padding-left: 20px;
+        }
+        .rating-stars {
+            color: #ffc107;
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg sticky-top">
+            <div class="container-fluid">
+                <a class="navbar-brand d-flex align-items-center" href="../Index.html">
+                    <img class="img-fluid imgrubik" src="../img/fcbfd228-a306-428d-8447-6e1fae1f5bce.png" alt="Rubik">
+                    <h1 class="brand-title ms-2 mb-0">Rubik</h1>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../Index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./sobreNosotros.html">Sobre Nosotros</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Tours
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Por localidad</a></li>
+                                <li><a class="dropdown-item" href="#">Por tipo</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">Tours destacados</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex ms-auto" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search"/>
+                        <button class="btn btn-outline-success" type="submit">Buscar</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Imagen hero del tour -->
+        <div class="tour-hero-container">
+            <div class="tour-hero-content container-fluid">
+                <h1 class="display-5 fw-bold mb-3">Tour Histórico de La Plata</h1>
+                <div class="d-flex flex-wrap gap-3">
+                    <span class="badge bg-success">Historia</span>
+                    <span class="badge bg-secondary">La Plata</span>
+                    <span class="badge bg-info">Gratuito</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contenido principal -->
+        <section class="py-5">
+            <div class="container">
+                <div class="row g-4">
+                    <!-- Información del tour (lado izquierdo) -->
+                    <div class="col-12 col-lg-8">
+                        <!-- Rating y resumen -->
+                        <div class="mb-5 pb-4 border-bottom">
+                            <div class="d-flex align-items-center gap-3 mb-3">
+                                <div class="rating-stars">
+                                    ★★★★★
+                                </div>
+                                <div>
+                                    <strong>4.8 de 5</strong>
+                                    <p class="text-muted mb-0">(45 reseñas de viajeros)</p>
+                                </div>
+                            </div>
+                            <p class="lead">Explora los monumentos y la arquitectura histórica de la capital de la Provincia de Buenos Aires. Un recorrido fascinante por los lugares más emblemáticos de La Plata.</p>
+                        </div>
+
+                        <!-- Descripción detallada -->
+                        <div class="mb-5">
+                            <h2 class="h3 mb-3">Sobre este tour</h2>
+                            <p>Este tour histórico te llevará a través de los lugares más significativos de La Plata, la ciudad de las diagonales y la arquitectura neoclásica. Descubrirás:</p>
+                            <ul class="list-unstyled">
+                                <li class="mb-2">
+                                    <strong>🏛️ Plaza Moreno</strong> — El corazón de la ciudad con su icónica Catedral Metropolitana
+                                </li>
+                                <li class="mb-2">
+                                    <strong>🎭 Paseo del Bosque</strong> — Un recorrido por el pulmón verde con museos y monumentos
+                                </li>
+                                <li class="mb-2">
+                                    <strong>🔬 Museo de La Plata</strong> — Historia natural, arqueología y antropología
+                                </li>
+                                <li class="mb-2">
+                                    <strong>🌳 Calles de identidad</strong> — Las famosas diagonales platenses y sus historias
+                                </li>
+                                <li class="mb-2">
+                                    <strong>📚 Casa Histórica</strong> — Edificios coloniales y arquitectura de época
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Itinerario -->
+                        <div class="mb-5">
+                            <h2 class="h3 mb-4">Itinerario del día</h2>
+                            <div class="timeline">
+                                <div class="itinerary-item mb-4">
+                                    <div class="d-flex align-items-start gap-3">
+                                        <div class="badge bg-success text-white">09:00</div>
+                                        <div>
+                                            <h5>Punto de encuentro</h5>
+                                            <p class="text-muted">Plaza Moreno, puerta principal de la Catedral Metropolitana</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="itinerary-item mb-4">
+                                    <div class="d-flex align-items-start gap-3">
+                                        <div class="badge bg-success text-white">09:30</div>
+                                        <div>
+                                            <h5>Introducción histórica</h5>
+                                            <p class="text-muted">Charla sobre la fundación de La Plata (1882) y su diseño urbano único</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="itinerary-item mb-4">
+                                    <div class="d-flex align-items-start gap-3">
+                                        <div class="badge bg-success text-white">10:00</div>
+                                        <div>
+                                            <h5>Recorrido por las diagonales</h5>
+                                            <p class="text-muted">Caminata por las principales avenidas y sus historias arquitectónicas</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="itinerary-item mb-4">
+                                    <div class="d-flex align-items-start gap-3">
+                                        <div class="badge bg-success text-white">11:00</div>
+                                        <div>
+                                            <h5>Visita al Paseo del Bosque</h5>
+                                            <p class="text-muted">Exploración del parque principal con monumentos y espacios verdes</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="itinerary-item">
+                                    <div class="d-flex align-items-start gap-3">
+                                        <div class="badge bg-success text-white">12:30</div>
+                                        <div>
+                                            <h5>Cierre y despedida</h5>
+                                            <p class="text-muted">Preguntas, respuestas y recomendaciones para visitas futuras</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Qué incluye -->
+                        <div class="mb-5">
+                            <h2 class="h3 mb-4">Qué está incluido</h2>
+                            <div class="row g-3">
+                                <div class="col-12 col-md-6">
+                                    <div class="d-flex gap-2">
+                                        <div class="text-success" style="font-size: 24px;">✓</div>
+                                        <div>
+                                            <h5>Guía experto</h5>
+                                            <p class="text-muted small">Historiador apasionado por La Plata</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <div class="d-flex gap-2">
+                                        <div class="text-success" style="font-size: 24px;">✓</div>
+                                        <div>
+                                            <h5>Totalmente gratuito</h5>
+                                            <p class="text-muted small">Sin costos ocultos</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <div class="d-flex gap-2">
+                                        <div class="text-success" style="font-size: 24px;">✓</div>
+                                        <div>
+                                            <h5>Duración: 3.5 horas</h5>
+                                            <p class="text-muted small">Aproximadamente</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <div class="d-flex gap-2">
+                                        <div class="text-success" style="font-size: 24px;">✓</div>
+                                        <div>
+                                            <h5>Acceso a lugares</h5>
+                                            <p class="text-muted small">Exterior de sitios históricos</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Requisitos y recomendaciones -->
+                        <div class="mb-5">
+                            <h2 class="h3 mb-3">Recomendaciones</h2>
+                            <div class="alert alert-info" role="alert">
+                                <strong>💡 Tips:</strong> Lleva calzado cómodo, protección solar, y una botella de agua. El tour es accesible pero incluye caminata moderada.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Sidebar: Información de contacto -->
+                    <div class="col-12 col-lg-4">
+                        <!-- Card de resumen -->
+                        <div class="card shadow-lg border-0 sticky-lg-top" style="top: 20px;">
+                            <div class="card-body">
+                                <h5 class="card-title mb-4">Detalles del tour</h5>
+
+                                <!-- Información general -->
+                                <div class="mb-4 pb-4 border-bottom">
+                                    <p class="small text-muted mb-1">📅 Próximas fechas</p>
+                                    <p class="fw-bold">Sábados a las 9:00 AM</p>
+                                </div>
+
+                                <div class="mb-4 pb-4 border-bottom">
+                                    <p class="small text-muted mb-1">⏱️ Duración</p>
+                                    <p class="fw-bold">3.5 horas</p>
+                                </div>
+
+                                <div class="mb-4 pb-4 border-bottom">
+                                    <p class="small text-muted mb-1">👥 Capacidad</p>
+                                    <p class="fw-bold">Máximo 25 personas</p>
+                                </div>
+
+                                <div class="mb-4 pb-4 border-bottom">
+                                    <p class="small text-muted mb-1">📍 Punto de encuentro</p>
+                                    <p class="fw-bold">Plaza Moreno, La Plata</p>
+                                </div>
+
+                                <div class="mb-4">
+                                    <p class="small text-muted mb-1">💰 Precio</p>
+                                    <p class="fw-bold text-success display-6">GRATUITO</p>
+                                </div>
+
+                                <!-- Información de contacto directo -->
+                                <div class="mb-4 pb-4 border-bottom">
+                                    <p class="small text-muted mb-2"><strong>📞 Coordinación:</strong></p>
+                                    <p class="text-muted small mb-2">Contacta directamente al guía para coordinarte:</p>
+                                    <a href="https://wa.me/5491123456789" target="_blank" class="btn btn-success btn-sm w-100 mb-2">
+                                        <i class="bi bi-whatsapp"></i> Martín: WhatsApp
+                                    </a>
+                                </div>
+
+                                <!-- CTA a página de contacto -->
+                                <a href="./contacto.html" class="btn btn-outline-success w-100">Más información</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección: Instructores -->
+        <section class="py-5 bg-light">
+            <div class="container">
+                <h2 class="h3 mb-5 text-center">Conoce a los guías</h2>
+                <div class="row g-4">
+                    <!-- Instructor 1 -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card instructor-card h-100 border-0 shadow-sm text-center p-4">
+                            <img src="../img/persona1.png" alt="Martín González" class="instructor-img mb-3">
+                            <h5 class="card-title">Martín González</h5>
+                            <p class="text-muted small mb-3">Historiador — UNLAM</p>
+                            <p class="card-text text-muted">Martín es historiador especializado en Historia Argentina con 5 años de experiencia en tours educativos. Apasionado por compartir las historias de La Plata con visitantes.</p>
+                            <div class="mt-3 pt-3 border-top">
+                                <small class="text-muted d-block mb-2">Área: Historia Urbana</small>
+                                <a href="https://wa.me/5491123456789" target="_blank" class="btn btn-success btn-sm">
+                                    Contactar por WhatsApp
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Instructor 2 -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card instructor-card h-100 border-0 shadow-sm text-center p-4">
+                            <img src="../img/mujer1.png" alt="Laura Fernández" class="instructor-img mb-3">
+                            <h5 class="card-title">Laura Fernández</h5>
+                            <p class="text-muted small mb-3">Guía de turismo — Residente local</p>
+                            <p class="card-text text-muted">Laura es una guía de turismo profesional y residente de La Plata desde hace 20 años. Conoce cada rincón de la ciudad y adora compartir sus secretos locales.</p>
+                            <div class="mt-3 pt-3 border-top">
+                                <small class="text-muted d-block mb-2">Área: Patrimonio Local</small>
+                                <a href="https://wa.me/5491129876543" target="_blank" class="btn btn-success btn-sm">
+                                    Contactar por WhatsApp
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Instructor 3 -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card instructor-card h-100 border-0 shadow-sm text-center p-4">
+                            <img src="../img/hombre2.png" alt="Carlos Mendoza" class="instructor-img mb-3">
+                            <h5 class="card-title">Carlos Mendoza</h5>
+                            <p class="text-muted small mb-3">Profesor de Arquitectura — UNLAM</p>
+                            <p class="card-text text-muted">Carlos es profesor de arquitectura e historiador de la arquitectura platense. Sus explicaciones sobre el diseño urbano son fascinantes e inspiradoras.</p>
+                            <div class="mt-3 pt-3 border-top">
+                                <small class="text-muted d-block mb-2">Área: Arquitectura e Urbanismo</small>
+                                <a href="https://wa.me/5491134567890" target="_blank" class="btn btn-success btn-sm">
+                                    Contactar por WhatsApp
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección: Opiniones -->
+        <section class="py-5">
+            <div class="container">
+                <h2 class="h3 mb-5 text-center">Lo que dicen los viajeros</h2>
+                <div class="row g-4">
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <div class="card-body">
+                                <div class="rating-stars mb-2">★★★★★</div>
+                                <p class="card-text text-muted">"Un tour increíble. Los guías son muy apasionados y transmiten su conocimiento de una manera muy dinámica."</p>
+                                <p class="mb-0"><strong>- Marina R.</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <div class="card-body">
+                                <div class="rating-stars mb-2">★★★★★</div>
+                                <p class="card-text text-muted">"Descubrí lugares de La Plata que no conocía. Vale totalmente la pena. Gratuito y de primera calidad."</p>
+                                <p class="mb-0"><strong>- Juan L.</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <div class="card-body">
+                                <div class="rating-stars mb-2">★★★★☆</div>
+                                <p class="card-text text-muted">"Muy buena experiencia. Me gustó mucho conocer la historia desde perspectivas diferentes. Recomendado!"</p>
+                                <p class="mb-0"><strong>- Sofia M.</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección: CTA para contactar -->
+        <section class="py-5 bg-success text-white">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-lg-8 text-center">
+                        <h2 class="h3 mb-3">¿Listo para explorar La Plata?</h2>
+                        <p class="lead mb-4">Contacta directamente con los guías para coordinar tu participación en el tour.</p>
+                        <a href="https://wa.me/5491123456789" target="_blank" class="btn btn-light btn-lg me-2">Contactar a Martín</a>
+                        <a href="../Index.html" class="btn btn-outline-light btn-lg">Ver más tours</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <!-- CTA grande -->
+        <section class="py-5 bg-success text-white">
+            <div class="container">
+                <div class="d-md-flex justify-content-between align-items-center">
+                    <div>
+                        <h3 class="h4 mb-1">¿Listo para un tour?</h3>
+                        <p class="mb-0">Volvé al inicio y explora todos nuestros tours gratuitos.</p>
+                    </div>
+                    <div class="mt-3 mt-md-0">
+                        <a href="../Index.html" class="btn btn-light btn-lg">Ver todos los tours</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer inferior -->
+        <div class="bg-dark text-white py-4">
+            <div class="container">
+                <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
+                    <div class="small mb-2 mb-md-0">&copy; 2025 Rubik Tours</div>
+
+                    <nav class="mb-2 mb-md-0">
+                        <a href="#" class="text-white-50 me-3 small">Privacidad</a>
+                        <a href="#" class="text-white-50 small">Términos</a>
+                    </nav>
+
+                    <a href="./contacto.html" class="btn btn-outline-light">Contacto</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS bundle (incluye Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+</body>
+</html>

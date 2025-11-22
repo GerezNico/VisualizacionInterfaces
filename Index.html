@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rubik</title>
+    <title>Rubik — Tours gratuitos en Provincia de Buenos Aires</title>
 
     <!--Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
@@ -22,27 +22,27 @@
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active ">
-                    <img src="./img/6e7a2dde-71ec-439f-8758-eb8d73986ec6.png" class="d-block w-100 carousel-img-1" alt="First slide">
+                    <img src="./img/3a1c8e22-f64f-4a24-8733-664a9dfc0b98.png" class="d-block w-100 carousel-img-1" alt="First slide">
                     <div class="carousel-caption d-none d-md-block">
-                        <h5 class="tituloCarrousel p-2">Los mejores cursos 100% GRATUITOS!</h5>
-                        <p>Inscribite en los mejores cursos gratuitos del pais en las instituciones mas importantes.</p>
+                        <h5 class="tituloCarrousel p-2">Los mejores tours 100% GRATUITOS!</h5>
+                        <p>Recorre los mejores tours gratuitos del pais en las locaciones mas importantes de la provincia de Buenos Aires.</p>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="./img/298ed8ce-493f-4c8e-83ee-efaeb5ec4c71.png" class="d-block w-100 carousel-img-2" alt="Second slide">
+                    <img src="./img/a2d135fd-c985-4f49-b912-07ffc125f6d2.png" class="d-block w-100 carousel-img-1" alt="Second slide">
                     <div class="carousel-caption d-none d-md-block">
-                        <h5>Cursos gubernamentales</h5>
-                        <p>Cursos gratuitos en instituciones públicas — aprende y certifícate</p>
+                        <h5>Tours gubernamentales</h5>
+                        <p>Tours gratuitos en instituciones públicas — aprende viviendo!</p>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="./img/f.elconfidencial.com_original_adf_7d2_f8b_adf7d2f8bee755c499d555c099a79649.jpg" class="d-block w-100 carousel-img-3" alt="Third slide">
+                    <img src="./img/reserva.png" class="d-block w-100 carousel-img-3" alt="Third slide">
                     <div class="carousel-caption d-none d-md-block">
-                        <h5>Más de 300 cursos · Certificados oficiales · Sin costo</h5>
-                        <p>Formación 100% gratuita y certificada por universidades e instituciones gubernamentales.</p>
+                        <h5>Más de 300 tours · Oficiales · Sin costo</h5>
+                        <p>Educacion 100% gratuita y acompañada por universitarios e instituciones gubernamentales en el descubrimiento de Buenos Aires.</p>
                     </div>
                 </div>
-            </div>
+             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
@@ -55,7 +55,7 @@
 
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
-                <a class="navbar-brand d-flex align-items-center" href="#">
+                <a class="navbar-brand d-flex align-items-center" href="./Index.html">
                     <img class="img-fluid imgrubik" src="./img/fcbfd228-a306-428d-8447-6e1fae1f5bce.png" alt="Rubik">
                     <h1 class="brand-title ms-2 mb-0">Rubik</h1>
                 </a>
@@ -72,13 +72,18 @@
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Cursos
+                            Tours
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Online</a></li>
-                                <li><a class="dropdown-item" href="#">Presencial</a></li>
+                                <li><a class="dropdown-item" href="./pages/buscador.html">Historico</a></li>
+                                <li><a class="dropdown-item" href="./pages/buscador.html">Gastronomia</a></li>
+                                <li><a class="dropdown-item" href="./pages/buscador.html">Cultura</a></li>
+                                <li><a class="dropdown-item" href="./pages/buscador.html">Teatro</a></li>
+                                <li><a class="dropdown-item" href="./pages/buscador.html">Museos</a></li>
                                 <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" href="#">Destacados</a></li>
+                                <li><a class="dropdown-item" href="./pages/buscador.html">Destacados</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="./pages/buscador.html">Otros</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -98,18 +103,21 @@
                 <div class="row justify-content-center">
                     <div class="col-12 col-md-10">
                         <div class="card shadow-sm p-4">
-                            <h2 class="h4 mb-2">Encuentra cursos gratuitos y certificados</h2>
-                            <p class="text-muted mb-3">Busca por curso, institución o palabra clave. Filtra por modalidad, ubicación y fecha de inicio.</p>
-                            <form class="row g-2 align-items-center">
+                            <h2 class="h4 mb-2">Encuentra tours gratuitos en la Provincia de Buenos Aires</h2>
+                                <p class="text-muted mb-3">Busca por tour, localidad o palabra clave. Filtra por tipo, ubicación y fecha.</p>
+                            <form class="row g-2 align-items-center" id="mainSearchForm">
                                 <div class="col-12 col-md-7">
-                                    <input type="search" class="form-control form-control-lg" placeholder="Buscar por curso, institución o palabra clave..." aria-label="Buscar cursos">
+                                    <input type="search" class="form-control form-control-lg" placeholder="Buscar por tour, localidad o palabra clave..." aria-label="Buscar tours" id="mainSearchInput">
                                 </div>
                                 <div class="col-6 col-md-3">
-                                    <select class="form-select form-select-lg" aria-label="Filtrar modalidad">
+                                    <select class="form-select form-select-lg" aria-label="Filtrar modalidad" id="mainSearchFilter">
                                         <option selected>Modalidad</option>
-                                        <option value="1">Online</option>
-                                        <option value="2">Presencial</option>
-                                        <option value="3">Mixto</option>
+                                        <option value="historico">Historico</option>
+                                        <option value="gastronomia">Gastronomia</option>
+                                        <option value="cultura">Cultura</option>
+                                        <option value="teatros">Teatros</option>
+                                        <option value="museos">Museos</option>
+                                        <option value="otros">Otros</option>
                                     </select>
                                 </div>
                                 <div class="col-6 col-md-2 d-grid">
@@ -122,25 +130,25 @@
             </div>
         </section>
 
-        <!-- Sección: Cursos destacados -->
+        <!-- Sección: tours destacados -->
         <section class="py-5">
             <div class="container">
                 <div class="d-flex justify-content-between align-items-center mb-4">
-                    <h3 class="h5 mb-0">Cursos destacados</h3>
-                    <a href="#" class="link-primary">Ver todos</a>
+                    <h3 class="h5 mb-0">Tours destacados</h3>
+                    <a href="./pages/buscador.html" class="link-primary">Ver todos</a>
                 </div>
 
                 <div class="row g-4">
                     <!-- Card 1 -->
                     <div class="col-12 col-md-6 col-lg-4">
                         <div class="card h-100 shadow-sm">
-                            <img src="./img/1536x864_cmsv2_ccd2805f-3bb8-51f6-ae2e-d242587b2b9c-8354810.jpg" class="card-img-top" alt="Curso 1">
+                            <img src="./img/05eb7dc1-3240-4a2f-9cb7-bc71cbf81eb6.png" class="card-img-top" alt="Tour 1">
                             <div class="card-body d-flex flex-column">
-                                <h5 class="card-title">Introducción a la Programación</h5>
-                                <p class="card-text text-muted mb-2">Universidad Nacional · Online · 8 semanas</p>
-                                <p class="small text-truncate">Aprendé los fundamentos de la programación con ejercicios prácticos y un proyecto final.</p>
+                                <h5 class="card-title">Paseo histórico por La Plata</h5>
+                                <p class="card-text text-muted mb-2">Guía local · Gratuito · 2 horas</p>
+                                <p class="small text-truncate">Recorrido a pie por los hitos históricos y monumentos principales de La Plata.</p>
                                 <div class="mt-auto d-flex justify-content-between align-items-center pt-3">
-                                    <a href="#" class="btn btn-outline-primary">Ver curso</a>
+                                    <a href="./pages/tour1.html" class="btn btn-outline-primary">Ver curso</a>
                                     <small class="text-muted">Certificado oficial</small>
                                 </div>
                             </div>
@@ -150,13 +158,13 @@
                     <!-- Card 2 -->
                     <div class="col-12 col-md-6 col-lg-4">
                         <div class="card h-100 shadow-sm">
-                            <img src="./img/32536-juventud-curso-comunidad-x750.jpg" class="card-img-top" alt="Curso 2">
+                            <img src="./img/reserva.png" class="card-img-top" alt="Tour 2">
                             <div class="card-body d-flex flex-column">
-                                <h5 class="card-title">Gestión de Proyectos Públicos</h5>
-                                <p class="card-text text-muted mb-2">Ministerio de Desarrollo · Presencial · 6 semanas</p>
-                                <p class="small text-truncate">Capacitate en planificación y ejecución de proyectos en el ámbito público.</p>
+                                <h5 class="card-title">Avistaje de aves en la Reserva</h5>
+                                <p class="card-text text-muted mb-2">Reserva Natural · Gratuito · 3 horas</p>
+                                <p class="small text-truncate">Salida guiada para observar especies locales en su hábitat natural.</p>
                                 <div class="mt-auto d-flex justify-content-between align-items-center pt-3">
-                                    <a href="#" class="btn btn-outline-primary">Ver curso</a>
+                                    <a href="./pages/tour1.html" class="btn btn-outline-primary">Ver curso</a>
                                     <small class="text-muted">Cupo limitado</small>
                                 </div>
                             </div>
@@ -166,13 +174,13 @@
                     <!-- Card 3 -->
                     <div class="col-12 col-md-6 col-lg-4">
                         <div class="card h-100 shadow-sm">
-                            <img src="./img/f.elconfidencial.com_original_adf_7d2_f8b_adf7d2f8bee755c499d555c099a79649.jpg" class="card-img-top" alt="Curso 3">
+                            <img src="./img/a2d135fd-c985-4f49-b912-07ffc125f6d2.png" class="card-img-top" alt="Tour 3">
                             <div class="card-body d-flex flex-column">
-                                <h5 class="card-title">Comunicación y Atención Ciudadana</h5>
-                                <p class="card-text text-muted mb-2">Instituto Público · Online · 4 semanas</p>
-                                <p class="small text-truncate">Mejorá la comunicación con la ciudadanía y las habilidades de atención al público.</p>
+                                <h5 class="card-title">Ruta de arte urbano</h5>
+                                <p class="card-text text-muted mb-2">Colectivo cultural · Gratuito · 2 horas</p>
+                                <p class="small text-truncate">Tour a pie para descubrir murales y proyectos de arte urbano en la ciudad.</p>
                                 <div class="mt-auto d-flex justify-content-between align-items-center pt-3">
-                                    <a href="#" class="btn btn-outline-primary">Ver curso</a>
+                                    <a href="./pages/tour1.html" class="btn btn-outline-primary">Ver curso</a>
                                     <small class="text-muted">Inscripción abierta</small>
                                 </div>
                             </div>
@@ -185,14 +193,14 @@
         <!-- Sección: Categorías -->
         <section class="py-4 bg-light">
             <div class="container">
-                <h4 class="h6 mb-3">Explorar por área</h4>
+                <h4 class="h6 mb-3">Explorar por tipo</h4>
                 <div class="d-flex flex-wrap gap-2">
-                    <a href="#" class="btn btn-outline-secondary btn-sm">Tecnología</a>
-                    <a href="#" class="btn btn-outline-secondary btn-sm">Salud</a>
-                    <a href="#" class="btn btn-outline-secondary btn-sm">Administración</a>
-                    <a href="#" class="btn btn-outline-secondary btn-sm">Educación</a>
-                    <a href="#" class="btn btn-outline-secondary btn-sm">Medio ambiente</a>
-                    <a href="#" class="btn btn-outline-secondary btn-sm">Emprendedurismo</a>
+                    <a href="./pages/buscador.html" class="btn btn-outline-secondary btn-sm">Naturaleza</a>
+                    <a href="./pages/buscador.html" class="btn btn-outline-secondary btn-sm">Historia</a>
+                    <a href="./pages/buscador.html" class="btn btn-outline-secondary btn-sm">Gastronomía</a>
+                    <a href="./pages/buscador.html" class="btn btn-outline-secondary btn-sm">Cultura</a>
+                    <a href="./pages/buscador.html" class="btn btn-outline-secondary btn-sm">Aventura</a>
+                    <a href="./pages/buscador.html" class="btn btn-outline-secondary btn-sm">Familia</a>
                 </div>
             </div>
         </section>
@@ -205,22 +213,22 @@
                     <div class="col-12 col-md-3">
                         <div class="mb-2 display-6 text-primary">1</div>
                         <h6>Buscar</h6>
-                        <p class="text-muted small">Encontrá cursos por tema, institución o ciudad.</p>
+                        <p class="text-muted small">Encontrá tours por tipo, localidad o palabras clave.</p>
                     </div>
                     <div class="col-12 col-md-3">
                         <div class="mb-2 display-6 text-primary">2</div>
-                        <h6>Inscribirse</h6>
-                        <p class="text-muted small">Completa el formulario y confirmá tu inscripción.</p>
+                        <h6>Reservar</h6>
+                        <p class="text-muted small">Reservá tu lugar con la información de contacto del organizador.</p>
                     </div>
                     <div class="col-12 col-md-3">
                         <div class="mb-2 display-6 text-primary">3</div>
-                        <h6>Tomar el curso</h6>
-                        <p class="text-muted small">Accedé al contenido y realizá las actividades.</p>
+                        <h6>Participar</h6>
+                        <p class="text-muted small">Asistí al tour y disfrutá la experiencia guiada.</p>
                     </div>
                     <div class="col-12 col-md-3">
                         <div class="mb-2 display-6 text-primary">4</div>
-                        <h6>Certificado</h6>
-                        <p class="text-muted small">Recibí un certificado oficial al completar.</p>
+                        <h6>Compartir</h6>
+                        <p class="text-muted small">Dejá una reseña o compartí fotos para ayudar a otros visitantes.</p>
                     </div>
                 </div>
             </div>
@@ -246,10 +254,10 @@
                 <div class="d-md-flex justify-content-between align-items-center">
                     <div>
                         <h3 class="h4 mb-1">¿Listo para empezar?</h3>
-                        <p class="mb-0">Explorá cientos de cursos gratuitos y obtené certificación oficial.</p>
+                        <p class="mb-0">Explorá cientos de tours gratuitos con gente calificada y experta!.</p>
                     </div>
                     <div class="mt-3 mt-md-0">
-                        <a href="#" class="btn btn-light btn-lg">Ver cursos</a>
+                        <a href="./pages/buscador.html" class="btn btn-light btn-lg">Ver tours</a>
                     </div>
                 </div>
             </div>
@@ -276,5 +284,8 @@
 
     <!--Bootstrap JS bundle (incluye Popper) - necesario para dropdowns y componentes interactivos-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+
+    <!-- Script para búsqueda -->
+    <script src="./js/index.js"></script>
 </body>
 </html>
