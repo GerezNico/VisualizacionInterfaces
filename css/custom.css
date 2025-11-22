@@ -12142,5 +12142,73 @@ a:not(.btn):focus {
 
 /* Compatibilidad: si prefieres mantener altura fija + crop, la regla .card .card-img-top
      definida más arriba (object-fit: cover) seguirá aplicando en pantallas más grandes. */
+/* Estilos de buscador.html */
+.search-result-card {
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.search-result-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.badge-custom {
+  background-color: #1B4D3E;
+  font-size: 0.8rem;
+}
+
+/* Estilos de tour1.html */
+.tour-hero {
+  height: 400px;
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+}
+
+.tour-hero-container {
+  position: relative;
+  height: 400px;
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: flex-end;
+  background-color: #6c757d;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url("../img/3a1c8e22-f64f-4a24-8733-664a9dfc0b98.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.tour-hero-content {
+  width: 100%;
+  color: white;
+  padding: 2rem;
+  z-index: 10;
+}
+
+.instructor-card {
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.instructor-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.instructor-img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+.itinerary-item {
+  border-left: 4px solid #1B4D3E;
+  padding-left: 20px;
+}
+
+.rating-stars {
+  color: #ffc107;
+  font-size: 1.2rem;
+}
 
 /*# sourceMappingURL=custom.css.map */
