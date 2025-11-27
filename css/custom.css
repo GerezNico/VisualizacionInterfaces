@@ -12129,10 +12129,26 @@ a:not(.btn):focus {
   border-color: #1B4D3E !important;
 }
 
-/* Navbar: cuando el fondo es oscuro, mantener blanco pero usar verde en hover */
+/* Navbar: cuando el fondo es oscuro, mantener blanco en hover/focus */
 .navbar .nav-link:hover,
 .navbar .nav-link:focus {
+  color: #ffffff !important;
+}
+
+/* Botón Buscar en el navbar: fondo blanco para que destaque sobre el fondo verde */
+.navbar .btn-outline-success {
+  background-color: #ffffff !important;
   color: #1B4D3E !important;
+  border-color: #1B4D3E !important;
+  box-shadow: none;
+  transition: background-color 0.12s ease, color 0.12s ease, border-color 0.12s ease;
+}
+
+.navbar .btn-outline-success:hover,
+.navbar .btn-outline-success:focus {
+  background-color: #1B4D3E !important;
+  color: #ffffff !important;
+  border-color: #1B4D3E !important;
 }
 
 /* Small transition on buttons/links for a smoother feel */
