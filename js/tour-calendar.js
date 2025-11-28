@@ -124,10 +124,10 @@ document.addEventListener('DOMContentLoaded', function () {
       if (reservationModal) reservationModal.hide();
 
       // Mostrar contacto con mensaje predefinido (incluimos nombre del usuario)
-      const message = `Hola Martín,%20soy%20${encodeURIComponent(name)}.%20He%20reservado%20el%20Tour%20Histórico%20de%20La%20Plata%20para%20el%20día%20${selectedIso}.%20¿Podés%20confirmar%20detalles%20y%20resolver%20mis%20dudas?`;
-      contactLink.href = `https://wa.me/${phone}?text=${message}`;
-      contactLink.textContent = `Martín: WhatsApp (${selectedIso})`;
-
+      //const message = `Hola Martín,%20soy%20${encodeURIComponent(name)}.%20He%20reservado%20el%20Tour%20Histórico%20de%20La%20Plata%20para%20el%20día%20${selectedIso}.%20¿Podés%20confirmar%20detalles%20y%20resolver%20mis%20dudas?`;
+      //contactLink.href = `https://wa.me/${phone}?text=${message}`;
+      //contactLink.textContent = `Martín: WhatsApp (${selectedIso})`;
+      //contactLink.textContent = "Gracias por reservar"
       contactAfter.style.display = 'block';
       contactAfter.scrollIntoView({behavior: 'smooth', block: 'center'});
     });

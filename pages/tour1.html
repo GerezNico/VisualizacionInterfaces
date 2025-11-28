@@ -264,9 +264,13 @@
                                         <button id="reserve-btn" type="button" class="btn btn-success w-100 mb-2" data-bs-toggle="modal" data-bs-target="#reservationModal">Reservar</button>
 
                                         <div id="contact-after" style="display: none;">
+                                            <!--
                                             <p class="small text-muted mb-1"><strong>📞 Coordinación:</strong></p>
                                             <p class="fw-bold mb-1">Martín: <a id="contact-wpp" href="#" target="_blank" class="btn btn-success btn-sm">WhatsApp</a></p>
                                             <p class="text-muted small mb-0">Se abrirá WhatsApp con un mensaje predefinido incluyendo la fecha seleccionada.</p>
+                                            -->
+                                            <p class="fw-bold mb-1">Gracias por tu reserva.</p>
+                                            <p class="text-muted small mb-0">Te enviaremos los detalles a tu email.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -428,6 +432,10 @@
                     <div class="mb-3">
                         <label for="res-doc" class="form-label">Documento</label>
                         <input type="text" id="res-doc" class="form-control" required />
+                    </div>
+                    <div class="mb-3">
+                        <label for="res-email" class="form-label">Email</label>
+                        <input type="email" id="res-phone" class="form-control" required />
                     </div>
                     <div class="mb-3">
                         <label for="res-phone" class="form-label">Número de celular</label>
